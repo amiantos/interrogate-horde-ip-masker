@@ -1,0 +1,15 @@
+{
+  "name": "interrogate-ip-masker",
+  "version": "1.0.0",
+  "description": "prototype of an ip-masker for interrogation horde",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Brad Root (amiantos)",
+  "license": "GPL-3.0-or-later",
+  "dependencies": {
+    "express": "^4.18.2",
+    "request": "^2.88.2"
+  }
+}
