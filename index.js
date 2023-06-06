@@ -15,8 +15,9 @@ app.get("/", (req, res) => {
   request(options, (error, response, body) => {
     // Printing the error if occurred
     if (error) console.log(error);
+    console.log(body);
 
-    if ((response.statusCode == 200 && body.flagged) || response.statusCode != 200) {
+    if ((response.statusCode == 200 && body.username != req.headers.worker) || response.statusCode != 200) {
       res.status(401).json({ message: "Unauthenticated" })
     } else {
       console.log("URL requested: " + req.query.url)
