@@ -5,4 +5,4 @@ Simple proof of concept of a simple node server that accepts a URL in a query st
 ## Running
 - `npm install`
 - `node index.js`
-- `curl "http://localhost:3000/?url=<url>" -H 'apikey: <apikey>'`
+- `curl "http://localhost:3000/?url=<url>" -H 'apikey: <apikey>' -H 'worker: <worker name>'`
